@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
+
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -14,5 +16,21 @@ public class Main {
         System.out.println("Итого месяцев " + i + ", итого сумма равна " + total + " рублей");
         { System.out.println();}
 
+    }
+    public static void task2 (){
+        System.out.println("Задача 2");
+        int d = 0;
+        while (d < 10) {
+            d++;
+            System.out.print(d + " ");
+        }
+        System.out.println();
+        for (; d > 0; d--) {
+            System.out.print(d + " ");
+        }
+        System.out.println();
+        {
+            System.out.println();
+        }
     }
 }
