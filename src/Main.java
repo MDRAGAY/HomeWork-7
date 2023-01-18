@@ -7,9 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
-
-
-
+        task8();
     }
 
     public static void task1() {
@@ -105,5 +103,17 @@ public class Main {
             friday += 7;
         }
         System.out.println();
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        int comet = 79;
+        int start = 1823;
+        int end = 2123;
+        int begin = 0;
+        for (int years = begin; years < end; years += comet) {
+            if (years >= start) {
+                System.out.println(years);
+            }
+        }
     }
 }
