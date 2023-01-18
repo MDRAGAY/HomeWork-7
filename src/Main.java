@@ -3,9 +3,11 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
 
 
     }
+
     public static void task1() {
         System.out.println("Задача 1");
         int savings = 15000;
@@ -14,12 +16,16 @@ public class Main {
         while (total < 2_459_000) {
             total = total + savings;
             i++;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");}
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+        }
         System.out.println("Итого месяцев " + i + ", итого сумма равна " + total + " рублей");
-        { System.out.println();}
+        {
+            System.out.println();
+        }
 
     }
-    public static void task2 (){
+
+    public static void task2() {
         System.out.println("Задача 2");
         int d = 0;
         while (d < 10) {
@@ -35,6 +41,7 @@ public class Main {
             System.out.println();
         }
     }
+
     public static void task3() {
         System.out.println("Задача 3");
         int totalPeople = 12_000_000;
@@ -47,6 +54,19 @@ public class Main {
             totalPeople = dynamicsPopulation + totalPeople;
             System.out.println("В " + year + " год, численность населения составляет " + totalPeople);
         }
+        System.out.println();
+    }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        int savings = 15000;
+        int i = 0;
+        while (savings < 12_000_000) {
+            i++;
+            savings = savings + savings / 100 * 7;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + savings + " рублей");
+        }
+        System.out.println("Всего месяцев " + i + ", итого накоплений " + savings + " рублей");
         System.out.println();
     }
 }
