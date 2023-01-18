@@ -2,6 +2,8 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
+
 
     }
     public static void task1() {
@@ -32,5 +34,19 @@ public class Main {
         {
             System.out.println();
         }
+    }
+    public static void task3() {
+        System.out.println("Задача 3");
+        int totalPeople = 12_000_000;
+        int birthPeople = 17;
+        int deadPeople = 8;
+        int dynamicsPopulation = totalPeople / 1000 * (birthPeople - deadPeople);
+        int year = 0;
+        while (year < 10) {
+            year++;
+            totalPeople = dynamicsPopulation + totalPeople;
+            System.out.println("В " + year + " год, численность населения составляет " + totalPeople);
+        }
+        System.out.println();
     }
 }
