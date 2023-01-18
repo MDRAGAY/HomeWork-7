@@ -5,6 +5,8 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+
 
 
 
@@ -76,6 +78,18 @@ public class Main {
         int savings = 15000;
         int i = 0;
         while (savings < 12_000_000) {
+            i++;
+            savings = savings + savings / 100 * 7;
+            if (i % 6 == 0)
+                System.out.println("Месяц " + i + " сумма накоплений равна " + savings + " рублей");
+        }
+        System.out.println();
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        int savings = 15000;
+        int i = 0;
+        while (i < 9 * 12) {
             i++;
             savings = savings + savings / 100 * 7;
             if (i % 6 == 0)
