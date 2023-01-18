@@ -4,6 +4,8 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
+
 
 
     }
@@ -67,6 +69,18 @@ public class Main {
             System.out.println("Месяц " + i + " сумма накоплений равна " + savings + " рублей");
         }
         System.out.println("Всего месяцев " + i + ", итого накоплений " + savings + " рублей");
+        System.out.println();
+    }
+    public static void task5() {
+        System.out.println("Задача 5");
+        int savings = 15000;
+        int i = 0;
+        while (savings < 12_000_000) {
+            i++;
+            savings = savings + savings / 100 * 7;
+            if (i % 6 == 0)
+                System.out.println("Месяц " + i + " сумма накоплений равна " + savings + " рублей");
+        }
         System.out.println();
     }
 }
