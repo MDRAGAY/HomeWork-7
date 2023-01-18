@@ -6,6 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
+
 
 
     }
@@ -92,6 +94,15 @@ public class Main {
             savings = savings + savings / 100 * 7;
             if (i % 6 == 0)
                 System.out.println("Месяц " + i + " сумма накоплений равна " + savings + " рублей");
+        }
+        System.out.println();
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        int friday = 6;
+        while (friday <= 31) {
+            System.out.println("Сегодня пятница, " + friday + "-е число");
+            friday += 7;
         }
         System.out.println();
     }
